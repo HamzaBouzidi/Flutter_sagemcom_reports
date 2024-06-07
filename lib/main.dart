@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled1/loggin_page.dart';
 import 'package:untitled1/pdf_screen.dart';
 import 'report_page.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MainPage(),
+      //home: MainPage(),
+      home: LoginScreen(),
     );
   }
 }
