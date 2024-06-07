@@ -84,26 +84,74 @@ class MainPage extends StatelessWidget {
     );
   }
 }
-
 class HelpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Aide'),
-        backgroundColor: Colors
-            .blue, // Définir la couleur de l'arrière-plan de la barre d'appbar
+        backgroundColor: Colors.blue,
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
+                'Bienvenue dans CMax_Rapport!',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                ),
+              ),
+              SizedBox(height: 20),
+              Text(
                 'CMax_Rapport est une application mobile qui centralise les résultats de test sans fil générés par la sonde FIP-435B et l\'application CMax 2 Mobile. Elle permet aux utilisateurs de stocker, visualiser et analyser facilement les rapports de test. Grâce à une interface utilisateur intuitive et des fonctionnalités avancées de gestion des rapports, CMax_Rapport simplifie le processus de collecte et d\'interprétation des données de test, permettant aux professionnels de prendre des décisions éclairées pour améliorer la qualité et la fiabilité de leurs réseaux.',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 16),
+                textAlign: TextAlign.justify,
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.black,
+                ),
+              ),
+              SizedBox(height: 20),
+              Text(
+                'Principales fonctionnalités:',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                ),
+              ),
+              SizedBox(height: 10),
+              Text(
+                '- Stockage et visualisation des rapports de test sans fil.',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.black,
+                ),
+              ),
+              Text(
+                '- Analyse avancée des données de test.',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.black,
+                ),
+              ),
+              Text(
+                '- Interface utilisateur intuitive et conviviale.',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.black,
+                ),
+              ),
+              Text(
+                '- Gestion simplifiée des rapports.',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.black,
+                ),
               ),
               SizedBox(height: 20),
             ],
@@ -113,3 +161,4 @@ class HelpPage extends StatelessWidget {
     );
   }
 }
+

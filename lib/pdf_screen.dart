@@ -44,7 +44,8 @@ class _PdfScreenState extends State<PdfScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Reports'),
+        title: Text('Rapports'),
+        backgroundColor: Colors.blue,
       ),
       body: Center(
         child: PdfListWidget(),
